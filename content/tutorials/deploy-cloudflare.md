@@ -183,7 +183,7 @@ hugo --gc --minify
 
 ## 次のステップ
 
-- [GitHub Pagesにもデプロイする](/tutorials/deploy-github-pages/)
+- [GitHub Pagesにもデプロイする]({{< ref "deploy-github-pages" >}})
 - カスタムドメインを設定する
 - アナリティクスを追加する（Cloudflare Web Analytics）
 

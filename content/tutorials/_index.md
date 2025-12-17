@@ -16,24 +16,25 @@ description = 'Hugoの使い方を学ぶチュートリアル集です'
 ## 目次
 
 ### 入門編
-1. [Hugoを始めよう](/tutorials/getting-started/) - インストールと最初のサイト作成
-2. [テーマを追加する](/tutorials/adding-theme/) - テーマの選び方と設定
-3. [記事を作成する](/tutorials/creating-content/) - Markdownでの記事作成
+1. [Hugoを始めよう]({{< ref "getting-started" >}}) - インストールと最初のサイト作成
+2. [テーマを追加する]({{< ref "adding-theme" >}}) - テーマの選び方と設定
+3. [記事を作成する]({{< ref "creating-content" >}}) - Markdownでの記事作成
 
 ### 実践編
-4. [新しい記事を追加する](/tutorials/new-article/) - 記事追加の詳細ガイド
-5. [開発サーバーとホットリロード](/tutorials/dev-server/) - 効率的な開発環境
-6. [タグとタクソノミー](/tutorials/tags-taxonomy/) - コンテンツの分類方法
+4. [新しい記事を追加する]({{< ref "new-article" >}}) - 記事追加の詳細ガイド
+5. [開発サーバーとホットリロード]({{< ref "dev-server" >}}) - 効率的な開発環境
+6. [タグとタクソノミー]({{< ref "tags-taxonomy" >}}) - コンテンツの分類方法
 
 ### 応用編
-7. [画像の扱い方とリサイズ](/tutorials/image-processing/) - 画像処理機能の活用
-8. [記事の並び順を制御する](/tutorials/article-order/) - ソートとweight
-9. [ページバンドルを理解する](/tutorials/page-bundles/) - ファイル構造の整理
-10. [記事プレビューの設定](/tutorials/summary-settings/) - 要約の長さ調整
+7. [画像の扱い方とリサイズ]({{< ref "image-processing" >}}) - 画像処理機能の活用
+8. [記事の並び順を制御する]({{< ref "article-order" >}}) - ソートとweight
+9. [ページバンドルを理解する]({{< ref "page-bundles" >}}) - ファイル構造の整理
+10. [記事プレビューの設定]({{< ref "summary-settings" >}}) - 要約の長さ調整
 
 ### デプロイ
-11. [Cloudflare Pagesにデプロイする](/tutorials/deploy-cloudflare/) - 無料で高速なホスティング
+11. [Cloudflare Pagesにデプロイする]({{< ref "deploy-cloudflare" >}}) - 無料で高速なホスティング
+12. [GitHub Pagesにデプロイする]({{< ref "deploy-github-pages" >}}) - GitHub Actionsで自動デプロイ
 
 ### トラブルシューティング
-12. [Hugoでハマりやすいポイント](/tutorials/troubleshooting/) - よくある問題と解決法
+13. [Hugoでハマりやすいポイント]({{< ref "troubleshooting" >}}) - よくある問題と解決法
 
