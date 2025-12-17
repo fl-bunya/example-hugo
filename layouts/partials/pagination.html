@@ -1,0 +1,32 @@
+{{ $paginator := .Paginator }}
+{{ if gt $paginator.TotalPages 1 }}
+<nav class="flex justify-center mt4 mb4">
+  <ul class="list flex items-center pa0 ma0">
+    {{/* 前のページ */}}
+    {{ if $paginator.HasPrev }}
+      <li class="mh2">
+        <a href="{{ $paginator.Prev.URL }}" class="link dim pa2 ba b--moon-gray br2">« 前へ</a>
+      </li>
+    {{ end }}
+    
+    {{/* ページ番号 */}}
+    {{ range $paginator.Pagers }}
+      <li class="mh1">
+        {{ if eq . $paginator }}
+          <span class="pa2 ba b--dark-gray br2 bg-dark-gray white">{{ .PageNumber }}</span>
+        {{ else }}
+          <a href="{{ .URL }}" class="link dim pa2 ba b--moon-gray br2">{{ .PageNumber }}</a>
+        {{ end }}
+      </li>
+    {{ end }}
+    
+    {{/* 次のページ */}}
+    {{ if $paginator.HasNext }}
+      <li class="mh2">
+        <a href="{{ $paginator.Next.URL }}" class="link dim pa2 ba b--moon-gray br2">次へ »</a>
+      </li>
+    {{ end }}
+  </ul>
+</nav>
+{{ end }}
+
