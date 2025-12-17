@@ -31,6 +31,9 @@ description = 'Hugoの使い方を学ぶチュートリアル集です'
 9. [ページバンドルを理解する](/tutorials/page-bundles/) - ファイル構造の整理
 10. [記事プレビューの設定](/tutorials/summary-settings/) - 要約の長さ調整
 
+### デプロイ
+11. [Cloudflare Pagesにデプロイする](/tutorials/deploy-cloudflare/) - 無料で高速なホスティング
+
 ### トラブルシューティング
-11. [Hugoでハマりやすいポイント](/tutorials/troubleshooting/) - よくある問題と解決法
+12. [Hugoでハマりやすいポイント](/tutorials/troubleshooting/) - よくある問題と解決法
 
