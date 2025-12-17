@@ -18,3 +18,13 @@ Thumbs.db
 .env
 .env.local
 
+# Terraform
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.*
+terraform/*.tfvars
+terraform/crash.log
+terraform/override.tf
+terraform/override.tf.json
+terraform/.terraform.lock.hcl
+
