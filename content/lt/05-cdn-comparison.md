@@ -34,6 +34,37 @@ weight = 5
 
 ---
 
+## デプロイ方法の比較
+
+| 項目 | GitHub Pages | Cloudflare Pages | S3 + CloudFront | S3のみ |
+|------|-------------|-----------------|-----------------|--------|
+| **デプロイ方法** | git push | git push | CLI / Terraform | CLI / Terraform |
+| **CI/CD** | GitHub Actions | 自動ビルド | 要設定 | 要設定 |
+| **ビルド環境** | GitHub側 | Cloudflare側 | ローカル | ローカル |
+| **初期設定** | 数クリック | 数クリック | IAM/S3/CF設定 | IAM/S3設定 |
+| **学習コスト** | 低 | 低 | 中〜高 | 低〜中 |
+
+---
+
+### デプロイコマンド比較
+
+```bash
+# GitHub Pages（GitHub Actionsで自動化）
+git add . && git commit -m "update" && git push
+
+# Cloudflare Pages（自動ビルド）
+git add . && git commit -m "update" && git push
+
+# S3（手動 or スクリプト）
+hugo && aws s3 sync public/ s3://bucket-name --delete
+
+# S3 + CloudFront（キャッシュ削除も必要）
+hugo && aws s3 sync public/ s3://bucket-name --delete
+aws cloudfront create-invalidation --distribution-id XXX --paths "/*"
+```
+
+---
+
 ## パフォーマンス測定結果
 
 | CDN / Hosting | TTFB | LCP |
